@@ -180,6 +180,23 @@
     position: absolute;
     right: 60px;
     width: 80px;
+
+    animation-name: layer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes layer {
+    0% {
+      bottom: 0;
+    }
+    25% {
+      bottom: -80px;
+    }
+    100% {
+      bottom: 0;
+    }
   }
 
   .layer-1 input[type=checkbox] {
@@ -395,6 +412,7 @@
   <div class="phone">
     <!-- bunny 1 -->
     <div class="layer-1">
+      <input type="checkbox">
       <div class="left-ear--outer"></div>
       <div class="left-ear--inner"></div>
       <div class="right-ear--outer"></div>
@@ -469,5 +487,5 @@
       <div class="layer-10__right-cloud"></div>
     </div>
   </div>  
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e9403f78807ed32',t:'MTczMjczMDQwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
